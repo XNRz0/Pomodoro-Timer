@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.timer {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startPause {
+    background-color: #28a745;
+    color: white;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+#eventList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#eventList li {
+    padding: 10px;
+    background: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#eventList input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+#newEventName {
+    padding: 10px;
+    width: calc(100% - 120px);
+    margin-right: 10px;
+}
+
+#addEvent {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleDarkMode {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #343a40;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e9ecef;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #e9ecef;
+}
+
+body.dark-mode #eventList li {
+    background-color: #333;
+}
+
+body.dark-mode #toggleDarkMode {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
